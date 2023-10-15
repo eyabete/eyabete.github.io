@@ -50,6 +50,7 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
+          <li><a href="resume.html">CV</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
           <li><a class="active" href="contact.html">Contact</a></li>
         </ul>
@@ -80,7 +81,15 @@
 
         <div class="row mt-5">
 
+           
           <div class="col-lg-4">
+            <img src="assets/img/eya2.jpeg" class="img-fluid rounded-circle" alt="Eya">
+          </div>
+
+          <div class="col-lg-1"></div>
+      
+
+          <div class="col-lg-6 mt-5">
             <div class="info">
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
@@ -104,45 +113,11 @@
 
           </div>
 
-          <div class="col-lg-8 mt-5 mt-lg-0">
+    
 
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                
-                
-               <!--  <div class="loading">Loading</div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-                <div class="error-message">Your message has been sent. Thank you!</div>
-                -->
-             
-              </div>
-
-              <div class="my-3">
-                <div id="success-message" class="success-message text-center bg bg-body-success" style="display: none;">
-                  Your message has been sent. Thank you!
-                </div>
-              </div>
+        
 
 
-              <div class="text-center"><button type="submit" class="btn" value="Save" href="">Send Message</button></div>
-              
-            </form>
-
-          </div>
 
         </div>
 
@@ -182,31 +157,6 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
-  <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const form = document.querySelector(".php-email-form");
-    const successMessage = document.getElementById("success-message");
-
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-
-      // You can add form validation here if needed
-      // For simplicity, we'll assume the form is always submitted successfully
-
-      // Show the success message
-      successMessage.style.display = "block";
-
-      // Optionally, reset the form fields
-      form.reset();
-
-      // You can also hide the success message after a certain delay (e.g., 5 seconds)
-      setTimeout(function () {
-        successMessage.style.display = "none";
-      }, 5000); // 5000 milliseconds (5 seconds)
-    });
-  });
-</script>
 
 
 </body>

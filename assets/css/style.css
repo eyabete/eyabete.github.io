@@ -1351,3 +1351,12 @@ section {
 #animated-text {
   animation: moveText 3s infinite alternate;
 }
+
+#typing-text {
+  font-size: 24px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: .15em solid pink;
+  /* Cursor effect */
+  animation: typing 2s steps(14, end), blink-caret .75s step-end infinite;
+}

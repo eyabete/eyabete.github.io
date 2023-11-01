@@ -244,4 +244,19 @@
    */
   new PureCounter();
 
+const text = "UI/UX Designer";
+const typingSpeed = 400; // Adjust the typing speed (in milliseconds)
+
+const textElement = document.getElementById('typing-text');
+
+let charIndex = 0;
+
+function typeText() {
+    if (charIndex < text.length) {
+        textElement.innerHTML += text.charAt(charIndex);
+        charIndex++;
+        setTimeout(typeText, typingSpeed);
+    }
+}
+typeText();
 })()
